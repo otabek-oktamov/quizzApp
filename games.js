@@ -7,7 +7,6 @@ const scoreEl = document.querySelector('#score')
 let questions = [
     {},
     {
-        id:1,
         question: "MayoqHub jamosida Counter Strike ni eng yaxshi o'ynovchi kim",
         choice1: "Shoxruh",
         choice2: "Farruh",
@@ -16,7 +15,6 @@ let questions = [
         answer: [2]
     },
     {
-        id:2,
         question: "Teshiktosh g'orini eshitganmisiz? o'sha g'orni kim teshgan?😜",
         choice1: "🤔",
         choice2: "boree",
@@ -25,7 +23,6 @@ let questions = [
         answer: [3]
     },
     {
-        id:3,
         question: "Ronaldoni MYU ga o'tishiga qanday qaraysiz?",
         choice1: "qariya bekor qildi",
         choice2: "Men yoshligimdan MYU muhlisiman",
@@ -34,7 +31,6 @@ let questions = [
         answer: [3]
     },
     {
-        id:4,
         question: "Nimaga go'sht qimmatlashib ketyapti",
         choice1: "Fermer buva yangi moshina olishi kerak",
         choice2: "dollar oshdi ukam",
@@ -43,7 +39,6 @@ let questions = [
         answer: [4]
     },
     {
-        id:5,
         question: "Dasturlash bo'yicha dunyodagi eng yaxshi o'qish qaysi",
         choice1: "MIT",
         choice2: "42 coding school",
@@ -52,7 +47,6 @@ let questions = [
         answer: [3]
     },
     {
-        id:6,
         question: "Bu yil chempionlar ligasida kim g'olib boladi",
         choice1: "Barselona",
         choice2: "Yana Barselona",
@@ -61,7 +55,6 @@ let questions = [
         answer: [1, 2, 3, 4]
     },
     {
-        id:7,
         question: "O'zbekistonning poytaxti toshkent dunyoning poytaxti qayer?",
         choice1: "New York",
         choice2: "London",
@@ -70,7 +63,6 @@ let questions = [
         answer: [4]
     },
     {
-        id:8,
         question: "Bu yil prezident saylovida kim yutadi?",
         choice1: "Shavkat Miromonovich Mirziyoyev",
         choice2: "Amaldagi Prezident",
@@ -79,7 +71,6 @@ let questions = [
         answer: [1, 2, 3, 4]
     },
     {
-        id:9,
         question: "Tik Tok erlargan qanday qaraysiz?",
         choice1: "Bular odam Bo'lmaydi",
         choice2: "A javob to'gri",
@@ -88,7 +79,7 @@ let questions = [
         answer: [1, 2, 3, 4]
     },
     {
-        id:10,
+
         question: "Kechasi uyda osmonga qaraganizda nima ko'rasiz",
         choice1: "Yulduzlarni",
         choice2: "Oyni",
@@ -119,11 +110,11 @@ choiceText.forEach(item => {
 
 
         if (i + 1 == questions.length) {
-        setTimeout(() => {
-            document.querySelector('.questions-container').classList.add('hidden')
-            document.querySelector('.currentScore-container').classList.remove('hidden')
-            document.querySelector('.currentScore').textContent='Your score is '+score
-        }, 1000);
+            setTimeout(() => {
+                document.querySelector('.questions-container').classList.add('hidden')
+                document.querySelector('.currentScore-container').classList.remove('hidden')
+                document.querySelector('.currentScore').textContent = 'Your score is ' + score
+            }, 1000);
         } else {
             setTimeout(() => {
                 item.classList.remove('correct')
